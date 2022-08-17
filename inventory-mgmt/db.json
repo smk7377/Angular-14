@@ -1,0 +1,137 @@
+{
+  "posts": [
+    {
+      "productCode": "sku 1",
+      "productName": "sku 1",
+      "instructions": "ins 2",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:42:15.000Z",
+      "price": "10",
+      "rating": "1",
+      "discount": "1",
+      "quantity": "20",
+      "flagged": "",
+      "id": 2
+    },
+    {
+      "productCode": "sku 2",
+      "productName": "sku 2",
+      "instructions": "ins 2",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:42:43.000Z",
+      "price": "10",
+      "rating": "2",
+      "discount": "3",
+      "quantity": "20",
+      "flagged": "",
+      "id": 3
+    },
+    {
+      "productCode": "sku 3",
+      "productName": "sku 3",
+      "instructions": "ins 3",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:42:50.000Z",
+      "price": "8",
+      "rating": "2",
+      "discount": "2",
+      "quantity": "22",
+      "flagged": "",
+      "id": 4
+    },
+    {
+      "productCode": "sku 4",
+      "productName": "sku 4",
+      "instructions": "ins 4",
+      "image": "../assets/images/product.png",
+      "status": "Low-Stock",
+      "date": "2021-06-10T00:00:00.000Z",
+      "price": "66",
+      "quantity": "2",
+      "flagged": "",
+      "id": 5
+    },
+    {
+      "productCode": "sku 5",
+      "productName": "sku 5",
+      "instructions": "ins 5",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:40:38.000Z",
+      "price": "16",
+      "rating": "3",
+      "discount": "0",
+      "quantity": "25",
+      "flagged": "",
+      "id": 6
+    },
+    {
+      "productCode": "sku 6",
+      "productName": "sku 6",
+      "instructions": "ins 6",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:38:38.000Z",
+      "price": "10",
+      "rating": "3",
+      "discount": "0",
+      "quantity": "25",
+      "flagged": "",
+      "id": 7
+    },
+    {
+      "productCode": "sku 7",
+      "productName": "sku 7",
+      "instructions": "ins 7",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:40:19.000Z",
+      "price": "11",
+      "rating": "3",
+      "discount": "0",
+      "quantity": "25",
+      "flagged": "",
+      "id": 8
+    },
+    {
+      "productCode": "sku 8a",
+      "productName": "sku 8a",
+      "instructions": "ins 8a",
+      "status": "Low-Stock",
+      "date": "2022-08-10T15:40:00.000Z",
+      "price": "12",
+      "rating": "2",
+      "discount": "0",
+      "quantity": "3",
+      "flagged": "",
+      "id": 9
+    },
+    {
+      "productCode": "sku 9",
+      "productName": "sku 9",
+      "instructions": "ins 9",
+      "status": "In-Stock",
+      "date": "2022-08-10T15:30:26.000Z",
+      "price": "10",
+      "rating": "3",
+      "discount": "2",
+      "quantity": "10",
+      "flagged": "",
+      "id": 10
+    },
+    {
+      "productCode": "sku 11",
+      "productName": "sku 11",
+      "instructions": "ins 11",
+      "status": "In-Stock",
+      "date": "2022-08-17T11:42:35.000Z",
+      "price": "11",
+      "rating": "3",
+      "discount": "1",
+      "quantity": "15",
+      "flagged": "",
+      "id": 11
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

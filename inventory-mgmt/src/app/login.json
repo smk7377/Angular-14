@@ -1,0 +1,30 @@
+[  
+  {  
+    "id": 1,  
+    "name": "admin",
+    "role" : "admin",  
+    "email": "admin@smkinventory.com",
+    "password": "admin123" 
+  },  
+  {  
+    "id": 2,  
+    "name": "krishna",
+    "role": "salesmanager", 
+    "email": "salesmanager@smkinventory.com",  
+    "password": "sm123" 
+  },
+  {  
+    "id": 3,  
+    "name": "user1",
+    "role": "user", 
+    "email": "user1@smkinventory.com",  
+    "password": "user123" 
+  },
+  {  
+    "id": 4,  
+    "name": "user2",
+    "role": "user", 
+    "email": "user2@smkinventory.com",  
+    "password": "user456" 
+  }
+]

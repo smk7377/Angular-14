@@ -1,0 +1,149 @@
+{
+    "Products":
+[  
+  {  
+    "id": 1,
+    "productCode": "SKU-01",  
+    "productName": "SKU-01",
+    "instructions" : "admin",
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "01/01/2022",
+    "quantity": 100,
+    "price" : 10,
+    "flagged" :""
+  },
+  {  
+    "id": 2,
+    "productCode": "SKU-02",  
+    "productName": "SKU-02",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "Low-Stock",
+    "date": "01/01/2022",
+    "quantity": 10,
+    "price" : 7,
+    "flagged" :""
+  },
+  {  
+    "id": 3,
+    "productCode": "SKU-03",  
+    "productName": "SKU-03",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "01/02/2022",
+    "quantity": 44,
+    "price" : 3,
+    "flagged" :""
+  },
+  {  
+    "id": 4,
+    "productCode": "SKU-04",  
+    "productName": "SKU-04",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "01/02/2022",
+    "quantity": 25,
+    "price" : 25,
+    "flagged" :""
+  },
+  {  
+    "id": 5,
+    "productCode": "SKU-05",  
+    "productName": "SKU-05",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "01/03/2021",
+    "quantity": 78,
+    "price" : 53,
+    "flagged" :""
+  },
+  {  
+    "id": 6,
+    "productCode": "SKU-06",  
+    "productName": "SKU-06",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "05/03/2021",
+    "quantity": 87,
+    "price" : 43,
+    "flagged" :""
+  },
+  {  
+    "id": 7,
+    "productCode": "SKU-07",  
+    "productName": "SKU-07",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "06/03/2021",
+    "quantity": 33,
+    "price" : 18,
+    "flagged" :""
+  },
+  {  
+    "id": 8,
+    "productCode": "SKU-08",  
+    "productName": "SKU-08",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "Low-Stock",
+    "date": "12/31/2021",
+    "quantity": 2,
+    "price" : 27,
+    "flagged" :""
+  },
+  {  
+    "id": 9,
+    "productCode": "SKU-09",  
+    "productName": "SKU-09",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "Low-Stock",
+    "date": "10/08/2022",
+    "quantity": 10,
+    "price" : 67,
+    "flagged" :""
+  },
+  {  
+    "id": 10,
+    "productCode": "SKU-10",  
+    "productName": "SKU-10",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "06/19/2022",
+    "quantity": 16,
+    "price" : 100,
+    "flagged" :""
+  },
+  {  
+    "id": 11,
+    "productCode": "SKU-11",  
+    "productName": "SKU-11",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "In-Stock",
+    "date": "08/25/2022",
+    "quantity": 10,
+    "price" : 33,
+    "flagged" :""
+  },
+  {
+    "id": 12,  
+    "productCode": "SKU-12",  
+    "productName": "SKU-12",
+    "instructions" : "admin",  
+    "image":"../assets/images/product.png",  
+    "status": "No-Stock",
+    "date": "11/25/2016",
+    "quantity": 0,
+    "price" : 92,
+    "flagged" :""
+  }
+]
+}

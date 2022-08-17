@@ -1,0 +1,55 @@
+
+<div class="container" style="margin-top: 70px;">
+    <div class="row">
+        <a routerLink="/home" class="nav-link btn btn-primary" routerLinkActive="active" style="text-align: center;width:100px"> Back</a>         
+    </div> 
+    <div class="row">
+      <div class="container col-sm-6 offset-sm-3 center">
+        <h1 class="center">Enter Product Details</h1>
+                <form #userlogin = "ngForm" (ngSubmit)="Addproduct($event)" novalidate>
+                    <div class="form-group">
+                        <div class="row">
+                            <label> Product Name: </label>
+                            <input  [(ngModel)]="productName" class="form-control" type="text" name="productName" />
+                        </div>
+                        <div class="row">
+                            <label> Instructions: </label>
+                            <input [(ngModel)]="instructions" class="form-control" type="text"  name="instructions" />
+                        </div>                                               
+                        <div class="row">
+                            <label> Status: </label>
+                            <select [(ngModel)]="status" class="form-control" name="status">
+                                <option> No-Stock</option>
+                                <option> In-Stock</option>
+                                 <option> Low-Stock</option>
+                                </select>
+                        </div>
+                        <div class="row">
+                            <label> Price: </label>
+                            <input [(ngModel)]="price" class="form-control" type="number" name="price">
+                        </div>  
+                        <div class="row">
+                            <label> Rating: </label>
+                            <input [(ngModel)]="rating" class="form-control" type="number" name="rating">
+                        </div>  
+                        <div class="row">
+                            <label> Discount: </label>
+                            <input [(ngModel)]="discount" class="form-control" type="number" name="discount">
+                        </div>                     
+                        <div class="row">
+                            <label> Quanity: </label>
+                            <input [(ngModel)]="quantity" class="form-control" type="number" name="quantity">
+                        </div>
+                        <div class="row" *ngIf="id == 0">
+                            <button mat-raised-button color="primary" type="submit">Add</button>
+                        </div>
+                        <div class="row" *ngIf="id > 0">
+                            <button mat-raised-button color="primary" type="submit">Update</button>
+                        </div>
+                    </div>  
+                                  <input type="hidden" value="id" class="form-control">   
+                                  <input type="hidden" value="date" class="form-control">                       
+                </form>
+      </div>
+    </div>
+</div> 

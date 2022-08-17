@@ -1,0 +1,115 @@
+
+  
+<div class="Container" style="overflow:hidden">
+    <div  style="height:50px;background-color: darkcyan;" class="row">           
+<div class="col-sm-11">    
+        <img src="../../assets/images/logo.png" alt="" style="height:35px;" />
+        </div>
+<div class="col-sm-1" >       
+    <button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="UserName: {{userName}} ; Role: {{userRole}}">
+        <img src="../../assets/images/user_male.jpg" alt="" style="height:35px;width:35px" /> &nbsp;
+   </button>
+    <button type="button" (click)="logout()" class="fa fa-sign-out"  data-toggle="tooltip" data-placement="bottom" title="Logout"></button>         
+</div>  
+</div>                    
+    
+<div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6" style="padding-right:20px">
+        <!-- <span class="pull-right"><a routerLink="/addproduct" class="nav-link btn btn-primary" routerLinkActive="active" style="color:white;text-align: right;width:100px" *ngIf="userRole=== 'admin'"> Add Product</a></span> -->
+        <button type="button" class="btn btn-primary pull-right"><span class="fa fa-plus" (click)="addProduct()"> Add Product</span></button>
+    </div>            
+</div>
+<div class="row">
+    <div class="col-md-06"></div>
+    <div class="col-md-06" class="pull-center">
+        <input [(ngModel)]="searchTerm" placeholder="Filter">
+    </div>
+</div>
+
+    <div  *ngIf="products.length > 0">              
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Product Code
+                    </th>
+                    <th>
+                        Product Name
+                    </th>                                    
+                    <th>
+                        Instruction
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Flagged
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                    <th>
+                        Info
+                    </th>
+                    <th *ngIf="userRole=== 'admin'">
+                        Actions
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products | filter: searchTerm: 'productCode'">                      
+                        <th>{{product.productCode | uppercase}}</th>
+                        <td appHighlighter [defaultColor]="'transparent'" [highlightColor]="'yellow'">{{product.productName}}</td>                      
+                        <td>{{product.instructions}}</td>                       
+                        <td>
+                            <span class="badge bg-warning" *ngIf="product.status === 'Low-Stock'">{{product.status}}</span>
+                            <span class="badge bg-success" *ngIf="product.status === 'In-Stock'">{{product.status}}</span>
+                            <span class="badge bg-danger" *ngIf="product.status === 'No-Stock'">{{product.status}}</span>
+                        </td>                       
+                        <td>{{product.price | currency}}</td>                        
+                        <td>{{product.date | date:"MM/dd/yy"}}</td>                        
+                        <td *ngIf="userRole=== 'salesmanager' && product.quantity > 0 && product.flagged == 'true'"> 
+                            <button type="button" class="fa fa-tags" data-toggle="tooltip" data-placement="top" (click)="movetoDiscount()" title="Move to Discount">                                
+                              </button>                            
+                        </td>                        
+                        <td *ngIf="userRole=== 'salesmanager' && product.quantity > 0 && product.flagged == 'false'"> {{product.flagged }} </td>                        
+                        <td *ngIf="userRole !== 'salesmanager' || product.quantity == 0">{{product.flagged}}</td>
+                        <td>{{product.quantity}}</td>   
+                        <td>
+                            <button type="button" class="fa fa-info-circle" (click)="openPopup(product)" data-toggle="modal" data-target="#myModal"></button>
+                        </td>
+                        <td *ngIf="userRole=== 'admin'">    
+                            <button type="button" class="btn btn-success"><span class="fa fa-edit" (click)="editProduct(product)"></span></button>
+                            <button type="button" class="btn btn-danger"><span class="fa fa-trash"(click)="deletProduct(product)"></span></button>                                                                                 
+                        </td>                     
+                      </tr>
+                </tbody>                
+            </table>        
+    </div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">          
+          <h4 class="modal-title">Product Details</h4>
+        </div>
+        <div class="modal-body">
+          <div id="popupdata" innerHTML="{{popupData}}"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closePopup()">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
